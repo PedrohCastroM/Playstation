@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card__back, .card__menu {
+    display: flex;
+    align-items: center;
+}
+
+.card__back svg, .card__menu svg {
+    cursor: pointer;
+}
+
+.card__img img {
+    width: 100%;
+    height: auto;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.card__subtitle {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+.card__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #074174;
+}
+
+.card__counter {
+    display: flex;
+    align-items: center;
+}
+
+.card__btn {
+    background: #074174;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card__counter-score {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+section {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Layout dos cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container .card {
+    margin: 10px;
+}
+
+.radio-inputs {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: #074174;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color:black ;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #e8e8e8;
+    font-weight: 600;
+  }
+  .radio-inputs .radio input + .name:hover {
+    color: #fff;
+  }
+  .radio-inputs .radio input:checked + .name:hover {
+    color: #1d1d29;
+  }
+  
+  .radio-inputs .radio input:checked + .name::after,
+  .radio-inputs .radio input:checked + .name::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #074174;
+    bottom: 0;
+  }
+  
+  .radio-inputs .radio input:checked + .name::after {
+    right: -10px;
+    border-bottom-left-radius: 300px;
+    box-shadow: -3px 3px 0px 3px #e8e8e8;
+  }
+  .radio-inputs .radio input:checked + .name::before {
+    left: -10px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 3px 3px 0px 3px #e8e8e8;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }

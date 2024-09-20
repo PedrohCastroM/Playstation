@@ -1,0 +1,41 @@
+body {
+    background-color: #074174;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background:  #27609c;
+}
+
+main {
+    padding: 20px;
+}
+
+.accessories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.accessory {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.accessory:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background: #27609c;
+}

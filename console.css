@@ -1,0 +1,248 @@
+body {
+    background-color: #074174;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background: #27609c;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+}
+
+.container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container .glass svg {
+    font-size: 2.5em;
+    fill: #fff;
+}
+
+footer {
+    padding: 20px;
+    background: #27609c;
+}
+
+/* From Uiverse.io by Sharkotech */ 
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #c1 {
+    background-color:#0e3d66 ;
+    box-shadow: 0 10px 10px rgba(2, 0, 0, 0.432);
+  }
+  
+  #c2 {
+    background-color:#0e3d66 ;
+    box-shadow: 0 10px 10px rgba(2, 0, 0, 0.432);
+  }
+  
+  #c3 {
+    background-color:#0e3d66 ;
+    box-shadow: 0 10px 10px rgba(2, 0, 0, 0.432);
+  }
+  
+  #c4 {
+    background-color:#0e3d66 ;
+    box-shadow: 0 10px 10px rgba(2, 0, 0, 0.432);
+}
+  
+  .main:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+  }
+  
+  .main:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+  }
+  
+  .main:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+  }
+  
+  .main:hover #c4 {
+    transform: translateX(50px) rotate(-10deg);
+  }
+  
+  #c1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+  }
+  
+  #c2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+  }
+  
+  #c3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+  }
+  
+  #c4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+  }
+  
+  .main {
+    display: grid;
+    height: 65vmax;
+    place-items: center;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    color: white;
+}
+
+header {
+    background-color: #074174;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    
+    padding: 10px;
+    border-left: 5px solid #0400ff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #074174;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.radio-inputs {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: #074174;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color:black ;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+   
+    font-weight: 600;
+  }
+  .radio-inputs .radio input + .name:hover {
+    color: #fff;
+  }
+  .radio-inputs .radio input:checked + .name:hover {
+    color: #1d1d29;
+  }
+  
+  .radio-inputs .radio input:checked + .name::after,
+  .radio-inputs .radio input:checked + .name::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #074174;
+    bottom: 0;
+  }
+  
+  .radio-inputs .radio input:checked + .name::after {
+    right: -10px;
+    border-bottom-left-radius: 300px;
+    box-shadow: -3px 3px 0px 3px #e8e8e8;
+  }
+  .radio-inputs .radio input:checked + .name::before {
+    left: -10px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 3px 3px 0px 3px #e8e8e8;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
